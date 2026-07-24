@@ -2752,3 +2752,647 @@ body {
 .container::after{
     animation: estrelas-rapidas 60s linear infinite;
 }
+
+
+
+/* =========================================================
+   RESPONSIVIDADE — SOMENTE TABLET/CELULAR
+   O layout de desktop acima permanece intacto.
+========================================================= */
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+
+    .pagina-index .container {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: visible;
+        padding: 0 14px 40px;
+    }
+
+    .pagina-index header {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 14px 0 8px;
+        display: block;
+    }
+
+    .pagina-index header .logo {
+        display: none;
+    }
+
+    .pagina-index nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .pagina-index nav .button {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 5px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .pagina-index .hero {
+        transform: none;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 28px 0 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .pagina-index .hero-img,
+    .pagina-index .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .pagina-index .hero-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina-index .avatar {
+        width: min(62vw, 230px);
+        height: min(62vw, 230px);
+        flex-shrink: 0;
+    }
+
+    .pagina-index .contato {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 18px;
+    }
+
+    .pagina-index .contato p {
+        margin: 18px 0;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-index .hero-content {
+        padding: 0;
+    }
+
+    .pagina-index .hero-content h1 {
+        margin-top: 0;
+        font-size: clamp(2.2rem, 12vw, 3rem);
+        line-height: 1.08;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-index .hero-content h2 {
+        margin: 10px 0 0;
+        font-size: clamp(1.25rem, 6vw, 1.6rem);
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .pagina-index .sobre,
+    .pagina-index .sobre-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pagina-index .sobre-box {
+        padding: 18px;
+    }
+
+    .pagina-index .buttons-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .pagina-index .buttons-container > a,
+    .pagina-index .download-button,
+    .pagina-index .github-button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pagina-index .download-button .docs,
+    .pagina-index .github-button .docs {
+        justify-content: center;
+    }
+
+    .pagina-index .skills {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    .pagina-index .badges {
+        width: 100%;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .pagina-index .badges span {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
+
+    .pagina-index .about-info {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagina-index .about-info > .skills {
+        margin: 0;
+    }
+
+    .pagina-index .education {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px 0 0;
+    }
+
+    .pagina-index .education-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .pagina-index .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .pagina-index .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pagina-index nav {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-index nav .button {
+        font-size: 16px;
+    }
+
+    .pagina-index .avatar {
+        width: min(68vw, 210px);
+        height: min(68vw, 210px);
+    }
+}
+
+/* =========================================================
+   RESPONSIVIDADE — PÁGINA DE EXPERIÊNCIAS
+   Não altera o layout do desktop
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .pagina-experiencia {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+
+    .pagina-experiencia .container {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding: 0 14px 40px;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    /* Menu */
+
+    .pagina-experiencia header {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 14px 0 8px;
+        display: block;
+    }
+
+    .pagina-experiencia header .logo {
+        display: none;
+    }
+
+    .pagina-experiencia nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .pagina-experiencia nav .button {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 5px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* Estrutura principal */
+
+    .pagina-experiencia .hero {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 28px 0 40px;
+        transform: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .pagina-experiencia .hero-img,
+    .pagina-experiencia .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Foto e contato */
+
+    .pagina-experiencia .hero-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: auto;
+    }
+
+    .pagina-experiencia .avatar {
+        width: min(62vw, 230px);
+        height: min(62vw, 230px);
+        align-self: auto;
+        flex-shrink: 0;
+    }
+
+    .pagina-experiencia .contato {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 18px;
+    }
+
+    .pagina-experiencia .contato h3 {
+        font-size: 18px;
+    }
+
+    .pagina-experiencia .contato p {
+        margin: 18px 0;
+        font-size: 15px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-experiencia .contato a {
+        overflow-wrap: anywhere;
+    }
+
+    /* Títulos */
+
+    .pagina-experiencia .hero-content {
+        padding: 0;
+    }
+
+    .pagina-experiencia .hero-content h1 {
+        margin-top: 0;
+        font-size: clamp(2.2rem, 12vw, 3rem);
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .pagina-experiencia .hero-content h2 {
+        margin: 10px 0 0;
+        font-size: clamp(1.25rem, 6vw, 1.6rem);
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    /* Experiências */
+
+    .pagina-experiencia .sobre {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .pagina-experiencia .sobre h3 {
+        line-height: 1.4;
+    }
+
+    .pagina-experiencia .sobre-box {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+        padding: 18px;
+    }
+
+    .pagina-experiencia .sobre-box p {
+        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-experiencia .sobre-box p:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    /* Lista de funções */
+
+    .pagina-experiencia .lista-funcoes {
+        width: 100%;
+        margin: 0;
+        padding-left: 22px;
+    }
+
+    .pagina-experiencia .lista-funcoes li {
+        margin-bottom: 12px;
+        padding-left: 3px;
+        font-size: 15px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-experiencia .lista-funcoes li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Celulares pequenos */
+
+@media screen and (max-width: 420px) {
+
+    .pagina-experiencia .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pagina-experiencia nav {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-experiencia nav .button {
+        font-size: 16px;
+    }
+
+    .pagina-experiencia .avatar {
+        width: min(68vw, 210px);
+        height: min(68vw, 210px);
+    }
+
+    .pagina-experiencia .contato,
+    .pagina-experiencia .sobre-box {
+        padding: 15px;
+    }
+
+    .pagina-experiencia .sobre-box p,
+    .pagina-experiencia .lista-funcoes li {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE — PÁGINA DE PROJETOS
+   Não altera o layout do desktop
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .pagina-projetos {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+
+    .pagina-projetos .container {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        padding: 0 14px 40px;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    /* Menu */
+
+    .pagina-projetos header {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 14px 0 8px;
+        display: block;
+    }
+
+    .pagina-projetos header .logo {
+        display: none;
+    }
+
+    .pagina-projetos nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .pagina-projetos nav .button {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 5px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* Estrutura principal */
+
+    .pagina-projetos .hero {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 28px 0 40px;
+        transform: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .pagina-projetos .hero-img,
+    .pagina-projetos .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Foto e contato */
+
+    .pagina-projetos .hero-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: auto;
+    }
+
+    .pagina-projetos .avatar {
+        width: min(62vw, 230px);
+        height: min(62vw, 230px);
+        align-self: auto;
+        flex-shrink: 0;
+    }
+
+    .pagina-projetos .contato {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        margin: 20px auto 0;
+        padding: 18px;
+    }
+
+    .pagina-projetos .contato h3 {
+        font-size: 18px;
+    }
+
+    .pagina-projetos .contato p {
+        margin: 18px 0;
+        font-size: 15px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-projetos .contato a {
+        overflow-wrap: anywhere;
+    }
+
+    /* Títulos */
+
+    .pagina-projetos .hero-content {
+        padding: 0;
+    }
+
+    .pagina-projetos .hero-content h1 {
+        margin-top: 0;
+        font-size: clamp(2.2rem, 12vw, 3rem);
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .pagina-projetos .hero-content h2 {
+        margin: 10px 0 0;
+        font-size: clamp(1.25rem, 6vw, 1.6rem);
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    /* Bloco do projeto */
+
+    .pagina-projetos .sobre {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .pagina-projetos .sobre h3 {
+        line-height: 1.4;
+    }
+
+    .pagina-projetos .sobre-box {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 12px;
+        padding: 18px;
+    }
+
+    .pagina-projetos .sobre-box p {
+        font-size: 15px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-projetos .sobre-box a {
+        overflow-wrap: anywhere;
+    }
+
+    /* Lista de funcionalidades */
+
+    .pagina-projetos .lista-funcoes {
+        width: 100%;
+        margin: 0;
+        padding-left: 22px;
+    }
+
+    .pagina-projetos .lista-funcoes li {
+        margin-bottom: 12px;
+        padding-left: 3px;
+        font-size: 15px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .pagina-projetos .lista-funcoes li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Celulares pequenos */
+
+@media screen and (max-width: 420px) {
+
+    .pagina-projetos .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pagina-projetos nav {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-projetos nav .button {
+        font-size: 16px;
+    }
+
+    .pagina-projetos .avatar {
+        width: min(68vw, 210px);
+        height: min(68vw, 210px);
+    }
+
+    .pagina-projetos .contato,
+    .pagina-projetos .sobre-box {
+        padding: 15px;
+    }
+
+    .pagina-projetos .sobre-box p,
+    .pagina-projetos .lista-funcoes li {
+        font-size: 14px;
+    }
+}
